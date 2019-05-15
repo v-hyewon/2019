@@ -1,0 +1,84 @@
+/* 2019 HYEWON */
+
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+@font-face {
+  font-family:'NotoR';
+  src: url('font/notokr/notokr-regular.eot');
+  src: url('font/notokr/notokr-regular.eot?#iefix') format('embedded-opentype'),
+       url('font/notokr/notokr-regular.woff') format('woff'),
+       url('font/notokr/notokr-regular.ttf') format('truetype'),
+       url('font/notokr/notokr-regular.svg#NotokrRegular') format('svg');
+}
+
+
+.blind { visibility:hidden; overflow:hidden; position:absolute; top:0; left:-999px; width:0; height:0; font-size:0; line-height:0; }
+
+html { overflow-y:auto; -webkit-text-size-adjust:none; -webkit-overflow-scrolling: touch; }
+body { background-color:#ecedef; }
+
+/* common */
+html, body { padding:0; margin:0; width:100%; height:100% }
+body { font-style:normal; font-size:13px; line-height:1.65; }
+body { font-family:"Apple SD Gothic Neo", "돋움", applegothic, verdana, arial, sans-serif; }
+body.m { font-family:HelveticaNeue-Light, AppleSDGothicNeo-Light, sans-serif; }
+div, ul, ol, li, dl, dt, dd, form, fieldset, input, p, h1, h2, h3, h4, h5, h6, blockquote, iframe, th, td { margin:0; padding:0; }
+img { border:0; }
+li { list-style:none; }
+button { vertical-align:middle; cursor:pointer; }
+
+/* link */
+a { color:#666; text-decoration:none; }
+a:hover { text-decoration:none; }
+
+/* table */
+table { table-layout:fixed; border-collapse:collapse; border-spacing:0; width:100%; }
+th,
+td { border-collapse:collapse; }
+legend, hr { display:none; }
+figure, dl {margin: 0; padding: 0;}
+
+/* form */
+form { display:inline; }
+select, input, textarea { color:#666; font-family:"NotokrRegular", verdana, arial, applegothic, sans-serif; font-size:inherit; vertical-align:middle; }
+fieldset, blockquote, iframe { border:none; }
+fieldset{ display:inline; }
+label { cursor:pointer; }
+
+/* button */
+button.isNone { overflow:visible; margin:0; padding:0; border:0; background:none; }
+
+/* label */
+label { margin-left:-5px; padding-left:5px; cursor:pointer; }
+
+input, textarea {
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+}
+
+::selection { background:#ffcc33; color:#000; }
+::-moz-selection { background:#ffcc33; color:#000; }
+
+header > .head > h1 {font-size:37px; font-family: 'Roboto Slab', serif; text-align: center; margin: 100px 0 80px;}
+header > .head > h1:after {content: ""; width:1px; height:100px; background: #000; display: block; margin: 15px auto 0;}
+header > .head > h1 > small {font-size:12px; display: block;}
+
+main > .v-portfolio {margin: 0 auto; width:830px;}
+main > .v-portfolio:after {content:""; display: block; clear: both;}
+main > .v-portfolio > ul {float: left;}
+main > .v-portfolio > ul:last-child {float: right; margin-top: 50px;}
+main > .v-portfolio > ul > li {height:auto; margin-bottom: 50px;}
+main > .v-portfolio > ul > li >  .box > dl:after {content:""; display: block; clear: both;}
+main > .v-portfolio > ul > li >  .box > dl > dt {float: right;font-family: 'Roboto Slab', serif; height:20px;}
+main > .v-portfolio > ul > li >  .box > dl > dd {font-size:13px; font-weight: 800;}
+main > .v-portfolio > ul > li >  .box > dl > dd > small {font-size:11px; display: block; color:#999; font-weight: 400;}
+
+footer {background: #333; text-align: center;}
+footer > .foot {width:100%; max-width:1000px; margin: 0 auto; padding:30px 0 60px;}
+footer > .foot > small { color:#fff;  font-family: 'Roboto Slab', serif; }
+
+
+
+@media screen and (max-width:1000px) {
+
+}
